@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Micronubes Consulting</title>
+    <meta name="description" content="Contact Micronubes Consulting about analytics strategy, data engineering, BI, or advanced analytics." />
+    <link rel="canonical" href="https://micronubes.example/contact/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact — Micronubes Consulting" />
+    <meta property="og:description" content="Tell us about your priorities — we respond within two business days." />
+    <meta property="og:url" content="https://micronubes.example/contact/" />
+    <meta property="og:image" content="https://micronubes.example/assets/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact — Micronubes Consulting" />
+    <meta name="twitter:image" content="https://micronubes.example/assets/og-image.svg" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/site-config.js" defer></script>
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html" aria-label="Micronubes Consulting home">
+          <img class="brand__mark" src="../assets/logo.png" alt="" width="34" height="34" />
+          <span class="brand__name">Micronubes Consulting</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="../services/index.html">Services</a>
+          <a href="../about/index.html">About</a>
+          <a href="index.html" class="btn btn--primary" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <header class="page-header reveal">
+        <div class="container">
+          <h1>Contact</h1>
+          <p class="lede">
+            Share a short note about your goals, timeline, and how to reach you. We typically reply within two business days.
+          </p>
+        </div>
+      </header>
+      <div class="container section reveal">
+        <form id="contact-form" class="form" method="post" action="#" novalidate>
+          <p class="form__hint">
+            Set your Formspree (or other) endpoint in <code>js/site-config.js</code> as <code>formAction</code>. Until then, this form will
+            not submit remotely.
+          </p>
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div>
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div>
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display: none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </form>
+        <p class="section__intro" style="margin-top: 2rem">
+          Prefer email? Write to <a data-site-email href="#">hello@micronubes.example</a> or connect on
+          <a data-site-linkedin href="#" rel="noopener noreferrer">LinkedIn</a>.
+        </p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="footer-year"></span> Micronubes Consulting. All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="../privacy/index.html">Privacy</a>
+          <a data-site-linkedin href="#" rel="noopener noreferrer">LinkedIn</a>
+          <a data-site-email href="#">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
